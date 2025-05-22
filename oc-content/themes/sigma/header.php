@@ -117,16 +117,6 @@
 
 <section>
 <?php osc_show_widgets('header'); ?>
-  <?php $breadcrumb = osc_breadcrumb('>', false, get_breadcrumb_lang()); ?>
-
-  <?php if( $breadcrumb !== '') { ?>
-    <div class="wrapper wrapper-flash">
-      <div class="breadcrumb">
-        <?php echo $breadcrumb; ?>
-        <div class="clear"></div>
-      </div>
-    </div>
-  <?php } ?>
 
   <div class="wrapper wrapper-flash flash2"><?php osc_show_flash_message(); ?></div>
 

@@ -53,29 +53,10 @@
 <?php osc_run_hook('item_top'); ?>
 
 <div id="item-content">
-  <h1><?php echo osc_item_title(); ?></h1>
+  <h1><?php echo osc_item_formated_price(); echo " ";?><?php echo osc_item_title(); ?></h1>
   <?php osc_run_hook('item_title'); ?>
 
   <?php if( osc_price_enabled_at_items() ) { ?><div class="price price-alt isMobile"><?php echo osc_item_formated_price(); ?></div><?php } ?>
-
-  <div class="item-header">
-    <div><?php if ( osc_item_pub_date() !== '' ) { printf( __('<strong class="publish">Published date:</strong> %1$s', 'sigma'), osc_format_date( osc_item_pub_date() ) ); } ?></div>
-    <div><?php if ( osc_item_mod_date() !== '' ) { printf( __('<strong class="update">Modified date:</strong> %1$s', 'sigma'), osc_format_date( osc_item_mod_date() ) ); } ?></div>
-    <?php if (count($location)>0) { ?>
-      <ul id="item_location">
-        <li><strong><?php _e("Location", 'sigma'); ?>:</strong> <?php echo implode(', ', $location); ?></li>
-      </ul>
-    <?php }; ?>
-
-    <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
-      <p id="edit_item_view">
-        <strong>
-          <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'sigma'); ?></a>
-        </strong>
-      </p>
-    <?php } ?>
-  </div>
-
 
   <?php if( osc_images_enabled_at_items() ) { ?>
     <?php
@@ -98,6 +79,26 @@
   <?php } ?>
   
   <?php osc_run_hook('item_images'); ?> 
+
+  <div class="clear"></div>
+
+  <div class="item-header">
+    <div><?php if ( osc_item_pub_date() !== '' ) { printf( __('<strong class="publish">Published date:</strong> %1$s', 'sigma'), osc_format_date( osc_item_pub_date() ) ); } ?></div>
+    <div><?php if ( osc_item_mod_date() !== '' ) { printf( __('<strong class="update">Modified date:</strong> %1$s', 'sigma'), osc_format_date( osc_item_mod_date() ) ); } ?></div>
+    <?php if (count($location)>0) { ?>
+      <ul id="item_location">
+        <li><strong><?php _e("Location", 'sigma'); ?>:</strong> <?php echo implode(', ', $location); ?></li>
+      </ul>
+    <?php }; ?>
+
+    <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
+      <p id="edit_item_view">
+        <strong>
+          <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'sigma'); ?></a>
+        </strong>
+      </p>
+    <?php } ?>
+  </div>
   
   <div id="description">
     <div class="desc"><?php echo osc_item_description(); ?></div>

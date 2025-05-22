@@ -18,25 +18,6 @@
 ?>
 <div id="sidebar">
   <?php osc_run_hook('item_sidebar_top'); ?>
-  
-  <?php if( osc_price_enabled_at_items() ) { ?><div class="price isDesktop isTablet"><?php echo osc_item_formated_price(); ?></div><?php } ?>
-
-  <?php if(!osc_item_mark_disable() && (!osc_is_web_user_logged_in() || osc_logged_user_id()!=osc_item_user_id())) { ?>
-    <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
-      <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
-      <input type="hidden" name="as" value="spam" />
-      <input type="hidden" name="action" value="mark" />
-      <input type="hidden" name="page" value="item" />
-      <select name="as" id="as" class="mark_as">
-          <option><?php _e("Mark as...", 'sigma'); ?></option>
-          <option value="spam"><?php _e("Mark as spam", 'sigma'); ?></option>
-          <option value="badcat"><?php _e("Mark as misclassified", 'sigma'); ?></option>
-          <option value="repeated"><?php _e("Mark as duplicated", 'sigma'); ?></option>
-          <option value="expired"><?php _e("Mark as expired", 'sigma'); ?></option>
-          <option value="offensive"><?php _e("Mark as offensive", 'sigma'); ?></option>
-      </select>
-    </form>
-  <?php } ?>
 
   <?php if( osc_get_preference('sidebar-300x250', 'sigma') != '') {?>
   <!-- sidebar ad 350x250 -->
@@ -47,7 +28,7 @@
   <?php } ?>
 
   <div id="contact" class="widget-box form-container form-vertical">
-    <h2><?php _e("Contact publisher", 'sigma'); ?></h2>
+    <h2><?php _e("Contact Seller", 'sigma'); ?></h2>
 
     <?php if(osc_profile_img_users_enabled()) { ?>
       <p class="user-img">
@@ -104,14 +85,14 @@
             <input type="hidden" name="page" value="item" />
             <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
           <div class="control-group">
-            <label class="control-label" for="yourName"><?php _e('Your name', 'sigma'); ?>:</label>
+            <label class="control-label" for="yourName"><?php _e('First name', 'sigma'); ?>:</label>
             <div class="controls"><?php ContactForm::your_name(); ?></div>
           </div>
           <div class="control-group">
             <label class="control-label" for="yourEmail"><?php _e('Your e-mail address', 'sigma'); ?>:</label>
             <div class="controls"><?php ContactForm::your_email(); ?></div>
           </div>
-          <div class="control-group">
+          <div class="control-group" style="display: none;">
             <label class="control-label" for="phoneNumber"><?php _e('Phone number', 'sigma'); ?> (<?php _e('optional', 'sigma'); ?>):</label>
             <div class="controls"><?php ContactForm::your_phone_number(); ?></div>
           </div>
@@ -143,12 +124,28 @@
 
   <?php osc_run_hook('item_contact'); ?>
 
+  <?php if(!osc_item_mark_disable() && (!osc_is_web_user_logged_in() || osc_logged_user_id()!=osc_item_user_id())) { ?>
+    <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
+      <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
+      <input type="hidden" name="as" value="spam" />
+      <input type="hidden" name="action" value="mark" />
+      <input type="hidden" name="page" value="item" />
+      <select name="as" id="as" class="mark_as">
+          <option><?php _e("Mark as...", 'sigma'); ?></option>
+          <option value="spam"><?php _e("Mark as spam", 'sigma'); ?></option>
+          <option value="badcat"><?php _e("Mark as misclassified", 'sigma'); ?></option>
+          <option value="repeated"><?php _e("Mark as duplicated", 'sigma'); ?></option>
+          <option value="expired"><?php _e("Mark as expired", 'sigma'); ?></option>
+          <option value="offensive"><?php _e("Mark as offensive", 'sigma'); ?></option>
+      </select>
+    </form>
+  <?php } ?>
+
   <div id="useful_info">
-    <h2><?php _e('Useful information', 'sigma'); ?></h2>
+    <h2><?php _e('NOTICE', 'sigma'); ?></h2>
     <ul>
-      <li><?php _e('Avoid scams by acting locally or paying with PayPal', 'sigma'); ?></li>
-      <li><?php _e('Never pay with Western Union, Moneygram or other anonymous payment services', 'sigma'); ?></li>
-      <li><?php _e('Don\'t buy or sell outside of your country. Don\'t accept cashier cheques from outside your country', 'sigma'); ?></li>
+      <li><?php _e('Before contacting the seller, please read their payment and pickup preferences', 'sigma'); ?></li>
+      <li><?php _e('Porch Pickup and Venmo or Cashapp are the default preferred options for board game swap to work smoothly', 'sigma'); ?></li>
       <li><?php _e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', 'sigma'); ?></li>
     </ul>
   </div>
