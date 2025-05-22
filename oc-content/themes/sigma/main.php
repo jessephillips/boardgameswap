@@ -28,7 +28,7 @@ sigma_add_body_class('home');
 <div class="clear"></div>
 
 <?php osc_goto_first_category(); ?>
-<div id="home-cats">
+<div id="home-cats" style="display: none;">
   <h2><?php _e('All categories', 'sigma'); ?></h2>
 
   <div class="wrap">
@@ -47,7 +47,7 @@ sigma_add_body_class('home');
 </div>
 
 </div><!-- main -->
-<div id="sidebar">
+<div id="sidebar" style="display: none;">
   <?php if( osc_get_preference('sidebar-300x250', 'sigma') != '') { ?>
     <div class="ads_300"><?php echo osc_get_preference('sidebar-300x250', 'sigma'); ?></div>
   <?php } ?>
