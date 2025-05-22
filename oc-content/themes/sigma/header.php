@@ -41,7 +41,7 @@
       <div class="nav">
         <?php osc_run_hook('header_links'); ?>
         <a href="<?php echo osc_base_url(); ?>" class="isMobile"><?php _e('Home', 'sigma'); ?></a>
-        <a class="isMobile" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish Ad", 'sigma');?></a>
+        <a class="isMobile" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("List a Game", 'sigma');?></a>
         <a href="<?php echo osc_contact_url(); ?>" class="isMobile"><?php _e('Contact', 'sigma'); ?></a>
 
         <?php if( osc_users_enabled() ) { ?>
@@ -52,13 +52,13 @@
             <a id="login_open" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'sigma') ; ?></a>
 
             <?php if(osc_user_registration_enabled()) { ?>
-              <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register', 'sigma'); ?></a>
+              <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Sign Up', 'sigma'); ?></a>
             <?php } ?>
           <?php } ?>
         <?php } ?>
 
         <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
-          <a class="publish isTablet isDesktop" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish Ad", 'sigma');?></a>
+          <a class="publish isTablet isDesktop" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Post a Game", 'sigma');?></a>
         <?php } ?>
       </div>
     </div>
@@ -86,15 +86,15 @@
         
         <?php osc_run_hook('home_search_top'); ?>
         
-        <h1><?php _e('What are you looking for today?', 'sigma'); ?></h1>
+        <h1><?php _e('Buy, Trade, Rent, Borrow Games', 'sigma'); ?></h1>
 
         <div class="main-search">
-          <div class="cell c1">
+          <div class="cell c1" style="width: 75%;"">
             <label><?php _e('Keyword', 'sigma'); ?></label>
             <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'sigma'), 'sigma')); ?>" />
           </div>
 
-          <div class="cell c2">
+          <div class="cell c2" style="display: none;">
             <label><?php _e('Category', 'sigma'); ?></label>
             <?php osc_categories_select('sCategory', null, __('Select a category', 'sigma')) ; ?>
           </div>
