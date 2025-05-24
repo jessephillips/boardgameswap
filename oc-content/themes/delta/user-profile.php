@@ -96,7 +96,14 @@
               <div class="row">
                 <label for="phoneLand"><?php _e('Land Phone', 'delta'); ?></label>
                 <div class="input-box"><?php UserForm::phone_land_text(osc_user()); ?></div>
-              </div>                        
+              </div>
+              
+              <div class="row">
+                <label for="payment_pref"><?php _e('Payment Preferences'); ?></label>
+                <div class="input-box">
+                  <textarea name="payment_pref" id="payment_pref" rows="10"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
+                </div>
+              </div>
 
               <div class="row">
                 <label for="info"><?php _e('About you', 'delta'); ?></label>

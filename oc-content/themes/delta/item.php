@@ -515,7 +515,13 @@
       <!-- CONTACT BLOCK -->
       <div class="wbox" id="contact">
         <h2><?php echo sprintf(__('Contact %s (seller)', 'delta'), $contact_name); ?></h2>
-        
+
+        <strong>Pickup Preferences</strong>
+        <div><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></div>
+
+        <strong>Payment Preferences</strong>
+        <div><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></div>
+
         <div class="row">
           <form action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form">
             <input type="hidden" name="action" value="contact_post" />

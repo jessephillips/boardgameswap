@@ -3570,4 +3570,23 @@ if(!function_exists('osc_static_page_indexable')) {
   }
 }
 
+/*****************************
+ * Custom BoardGameSwap.org BGS
+ *****************************/
+
+function bgs_save_payment_pref($userId) {
+    if (Params::existParam('payment_pref')) {
+        $payment_pref = Params::getParam('payment_pref');
+        $conn = DBConnectionClass::newInstance()->getOsclassDb();
+        $dao = new DBCommandClass($conn);
+        $dao->update(
+            DB_TABLE_PREFIX . 't_user',
+            ['payment_pref' => $payment_pref],
+            ['pk_i_id' => $userId]
+        );
+    }
+}
+// osc_add_hook('user_register_completed', 'bgs_save_payment_pref');
+osc_add_hook('user_edit_completed', 'bgs_save_payment_pref');
+ 
 ?>
