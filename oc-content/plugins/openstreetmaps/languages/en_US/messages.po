@@ -1,0 +1,478 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenStreetMaps Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-19 12:43+0100\n"
+"PO-Revision-Date: 2023-12-19 12:43+0100\n"
+"Last-Translator: Miso <miso546@azet.sk>\n"
+"Language-Team: MB Themes <info@mb-themes.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-KeywordsList: __;_e;_m\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: languages/en_US\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: admin/cache.php:3 admin/configure.php:3 admin/configure.php:105 index.php:86
+#: index.php:95 index.php:126
+msgid "Configure"
+msgstr ""
+
+#: admin/cache.php:13
+msgid "Cache has been successfully cleaned"
+msgstr ""
+
+#: admin/cache.php:27
+msgid "Cache Logs"
+msgstr ""
+
+#: admin/cache.php:31
+#, php-format
+msgid ""
+"In order to align with OpenStreetMaps usage policy, each query must be "
+"cached. You may find last %d stored coordinates queries."
+msgstr ""
+
+#: admin/cache.php:32
+msgid ""
+"Each time it is required to get new coordinates, plugin first check into "
+"cache if requested coordinates already does not exists."
+msgstr ""
+
+#: admin/cache.php:36
+msgid "Clean cache history"
+msgstr ""
+
+#: admin/cache.php:42
+msgid "Query"
+msgstr ""
+
+#: admin/cache.php:43
+msgid "Coordinate (lat, lng)"
+msgstr ""
+
+#: admin/cache.php:44
+msgid "Create date"
+msgstr ""
+
+#: admin/cache.php:49
+msgid "No coordinate logs has been found"
+msgstr ""
+
+#: admin/configure.php:53
+msgid "Settings were successfully saved"
+msgstr ""
+
+#: admin/configure.php:81 cron.php:30
+#, php-format
+msgid "%d coordinates successfully found, %d coordinates not found."
+msgstr ""
+
+#: admin/configure.php:84 cron.php:33
+msgid "There are no coordinates to be filled."
+msgstr ""
+
+#: admin/configure.php:92
+msgid "Coordinates removed."
+msgstr ""
+
+#: admin/configure.php:117
+msgid "Access Token"
+msgstr ""
+
+#: admin/configure.php:120
+msgid "Request access token (free):"
+msgstr ""
+
+#: admin/configure.php:125
+msgid "Default Zoom"
+msgstr ""
+
+#: admin/configure.php:128
+msgid "Zoom level of map. Min: 0; Max: 19; Def: 13"
+msgstr ""
+
+#: admin/configure.php:132
+msgid "Coords Randomization"
+msgstr ""
+
+#: admin/configure.php:135
+msgid ""
+"In case there are 2 same coordinates on one place, they will be shifted "
+"slightly from place of origin to avoid overlaping of marks. Enter 0 to "
+"disable. Min: 0; Max: 100; Def: 5"
+msgstr ""
+
+#: admin/configure.php:143
+msgid "Hook Map on Item Page"
+msgstr ""
+
+#: admin/configure.php:146 admin/configure.php:153 admin/configure.php:160
+#: admin/configure.php:167 admin/configure.php:175 admin/configure.php:182
+#: admin/configure.php:189 admin/configure.php:196 admin/configure.php:203
+#: admin/configure.php:210
+msgid "Require Osclass 8.2 hooks."
+msgstr ""
+
+#: admin/configure.php:150
+msgid "Item Page Hook"
+msgstr ""
+
+#: admin/configure.php:157
+msgid "Hook Map on Home Page"
+msgstr ""
+
+#: admin/configure.php:164
+msgid "Home Page Hook"
+msgstr ""
+
+#: admin/configure.php:172
+msgid "Hook Map on Search Page"
+msgstr ""
+
+#: admin/configure.php:179
+msgid "Search Page Hook"
+msgstr ""
+
+#: admin/configure.php:186
+msgid "Hook Map on Item Publish/Edit Page"
+msgstr ""
+
+#: admin/configure.php:193
+msgid "Item Publish/Edit Page Hook"
+msgstr ""
+
+#: admin/configure.php:200
+msgid "Hook Map on Public Profile Page"
+msgstr ""
+
+#: admin/configure.php:207
+msgid "Public Profile Page Hook"
+msgstr ""
+
+#: admin/configure.php:218
+msgid "Hook Radius Select"
+msgstr ""
+
+#: admin/configure.php:221
+msgid "When enabled, radius select box is hooked to search sidebar."
+msgstr ""
+
+#: admin/configure.php:225
+msgid "Radius Measure"
+msgstr ""
+
+#: admin/configure.php:227
+msgid "Kilometers (km)"
+msgstr ""
+
+#: admin/configure.php:228
+msgid "Miles (m)"
+msgstr ""
+
+#: admin/configure.php:231
+msgid "Select in what measure radius search will work (kilometers or miles)."
+msgstr ""
+
+#: admin/configure.php:235
+msgid "Default location pattern"
+msgstr ""
+
+#: admin/configure.php:239
+msgid "Pattern that will be used to search coordinates on OpenStreetMaps API."
+msgstr ""
+
+#: admin/configure.php:240
+msgid ""
+"Available keywords: {COUNTRY}, {COUNTRY_CODE}, {REGION}, {CITY}, "
+"{CITY_AREA}, {ZIP}, {ADDRESS}. Def: {COUNTRY} {REGION} {ZIP} {CITY} {ADDRESS}"
+msgstr ""
+
+#: admin/configure.php:243
+msgid "Sample call:"
+msgstr ""
+
+#: admin/configure.php:252
+msgid "Enable Related Items"
+msgstr ""
+
+#: admin/configure.php:255
+msgid "When enabled, related items are shown on map at listing page."
+msgstr ""
+
+#: admin/configure.php:259
+msgid "Rel. Items Limit"
+msgstr ""
+
+#: admin/configure.php:261 admin/configure.php:412
+msgid "items"
+msgstr ""
+
+#: admin/configure.php:263
+msgid "Maxmimum items shown on map. Def: 20"
+msgstr ""
+
+#: admin/configure.php:267
+msgid "Rel. Items Category"
+msgstr ""
+
+#: admin/configure.php:270
+msgid "When enabled, only items from same category are shown as related."
+msgstr ""
+
+#: admin/configure.php:274
+msgid "Items Location"
+msgstr ""
+
+#: admin/configure.php:276
+msgid "Same country"
+msgstr ""
+
+#: admin/configure.php:277
+msgid "Same country & region"
+msgstr ""
+
+#: admin/configure.php:278
+msgid "Same country & region & city"
+msgstr ""
+
+#: admin/configure.php:281
+msgid "Select how location will be used to filter out related items."
+msgstr ""
+
+#: admin/configure.php:289
+msgid "Item Map Height"
+msgstr ""
+
+#: admin/configure.php:293 admin/configure.php:339
+msgid "Enter numerical value only, represents pixels. Def: 240px."
+msgstr ""
+
+#: admin/configure.php:298
+msgid "Fullscreen Item Map"
+msgstr ""
+
+#: admin/configure.php:301 admin/configure.php:316 admin/configure.php:331
+#: admin/configure.php:346
+msgid ""
+"When enabled, fullscreen control is added into map. Test before using in "
+"production, for some themes it may not work correctly."
+msgstr ""
+
+#: admin/configure.php:305
+msgid "Search Map Height"
+msgstr ""
+
+#: admin/configure.php:309
+msgid "Enter numerical value only, represents pixels. Def: 360px."
+msgstr ""
+
+#: admin/configure.php:313
+msgid "Fullscreen Search Map"
+msgstr ""
+
+#: admin/configure.php:320
+msgid "Home Map Height"
+msgstr ""
+
+#: admin/configure.php:324
+msgid "Enter numerical value only, represents pixels. Def: 480px."
+msgstr ""
+
+#: admin/configure.php:328
+msgid "Fullscreen Home Map"
+msgstr ""
+
+#: admin/configure.php:335
+msgid "Publish Map Height"
+msgstr ""
+
+#: admin/configure.php:343
+msgid "Fullscreen Publish Map"
+msgstr ""
+
+#: admin/configure.php:354
+msgid "Publish Map Search Version"
+msgstr ""
+
+#: admin/configure.php:356
+msgid "v1 - exact match for dropdowns"
+msgstr ""
+
+#: admin/configure.php:357
+msgid "v2 - universal closest match"
+msgstr ""
+
+#: admin/configure.php:360
+msgid ""
+"Select search functionality version. V2 will work just in case you have "
+"coordinates filled in t_city table (osclass 4.4+, locations v2+)."
+msgstr ""
+
+#: admin/configure.php:364
+msgid "Coordinates Fields"
+msgstr ""
+
+#: admin/configure.php:367
+msgid ""
+"When enabled, coordinates input fields are added to item publish/edit forms "
+"(name d_coord_lat, d_coord_long) as hidden inputs."
+msgstr ""
+
+#: admin/configure.php:376 admin/configure.php:430
+msgid "This is demo site"
+msgstr ""
+
+#: admin/configure.php:376 admin/configure.php:378 admin/configure.php:430
+#: admin/configure.php:432
+msgid "Save"
+msgstr ""
+
+#: admin/configure.php:388
+msgid "Upload missing coordinates"
+msgstr ""
+
+#: admin/configure.php:400
+#, php-format
+msgid "There is %s listings with missing coordinates"
+msgstr ""
+
+#: admin/configure.php:403
+#, php-format
+msgid "There is %s listings with coordinates where location could not be found"
+msgstr ""
+
+#: admin/configure.php:406
+msgid ""
+"Please click on \"Fill missing coordinates\" button in order to get "
+"coordinates for items those are missing them"
+msgstr ""
+
+#: admin/configure.php:410
+msgid "Items Processed"
+msgstr ""
+
+#: admin/configure.php:414
+msgid ""
+"Enter numerical value of how many items will be filled in one step. Def: 500"
+msgstr ""
+
+#: admin/configure.php:418
+msgid "Fill missing coordinates"
+msgstr ""
+
+#: admin/configure.php:421
+msgid "Clear coordinates"
+msgstr ""
+
+#: admin/configure.php:442
+msgid "Plugin Setup"
+msgstr ""
+
+#: admin/configure.php:446
+msgid ""
+"Following integrations may be required for Osclass 8.1 or lower. In Osclass "
+"8.2 were introduced new hooks (theme must integrate these) that enables "
+"seamless integration into theme."
+msgstr ""
+
+#: admin/configure.php:448
+msgid ""
+"Plugin does not require any modifications in theme files until you want to "
+"place to your theme home or search page map. Do not add more than 1 map at "
+"same page!"
+msgstr ""
+
+#: admin/configure.php:451
+msgid ""
+"To show latest items on home page map, please add to your main.php following "
+"code:"
+msgstr ""
+
+#: admin/configure.php:456
+msgid ""
+"To show search items on search page map, please add to your search.php "
+"following code:"
+msgstr ""
+
+#: admin/configure.php:461
+msgid ""
+"To show item (and related items) on listing page map, enable \"Hook Map\" "
+"option or add to your item.php following code:"
+msgstr ""
+
+#: admin/configure.php:466
+msgid ""
+"To show map on publish/edit page to select item location from map, add to "
+"your item-post.php / item-edit.php following code:"
+msgstr ""
+
+#: admin/configure.php:472
+msgid ""
+"To show radius select box on search page, enable \"Hook Radius Select\" "
+"option or add to your search.php (form) following code:"
+msgstr ""
+
+#: admin/configure.php:483
+msgid "Cron Setup"
+msgstr ""
+
+#: admin/configure.php:487
+msgid ""
+"If your osclass has thousands of listings, filling coordinates may be "
+"complicated. For this reason we have created cron you can setup to fill "
+"coordinates for you."
+msgstr ""
+
+#: admin/configure.php:488
+msgid ""
+"You may get output of cron to email so you will be notified once all "
+"coordinates are filled and cron can be disabled."
+msgstr ""
+
+#: admin/configure.php:489
+msgid ""
+"Due to usage limits of OpenStreetMaps, it is allowed to get max 1 coordinate "
+"per second and therefore script is sleeped to match this requirement. This "
+"means for 1 minute you can get about 60 coordinates."
+msgstr ""
+
+#: admin/configure.php:490
+msgid ""
+"If your maximum php execution time is i.e. 300 seconds (5min), you can get "
+"about 290 items in that time, meaning you would setup cron to run once per 5 "
+"minute with limit of 290 listings."
+msgstr ""
+
+#: admin/configure.php:491
+msgid "In this scenario you would setup cron with following preferences."
+msgstr ""
+
+#: functions.php:343
+msgid "Radius"
+msgstr ""
+
+#: functions.php:346
+msgid "Select radius"
+msgstr ""
+
+#: index.php:96
+msgid "Cache Log"
+msgstr ""
+
+#: index.php:111
+msgid "Report Bug"
+msgstr ""
+
+#: index.php:112
+msgid "Support Forums"
+msgstr ""
+
+#: index.php:113
+msgid "Contact Us"
+msgstr ""
