@@ -1,3 +1,14 @@
+/****************************************************
+  *
+  *   BOARD GAME SWAP CUSTOM CSS
+  *
+  **************************************************/
+
+#listing .seller-prefs .item {width: calc(50% - 10px); margin-right: 10px;}
+#listing .seller-prefs .right {float: left; margin-left: 10px;}
+#listing .seller-prefs .title {font-weight: bold; margin-bottom: 10px;}
+#listing .seller-prefs q {font-style: italic;}
+
 /* ALERTS FREQUENCY */
 .alert-frequency {display:flex;float: left; align-items: center; flex-wrap: nowrap;margin:6px 0 12px 0;}
 .alerts-box .head-row .data div.alert-frequency {margin-top:10px;}

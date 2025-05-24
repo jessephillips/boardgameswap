@@ -3588,5 +3588,20 @@ function bgs_save_payment_pref($userId) {
 }
 // osc_add_hook('user_register_completed', 'bgs_save_payment_pref');
 osc_add_hook('user_edit_completed', 'bgs_save_payment_pref');
+
+function bgs_save_pickup_pref($userId) {
+    if (Params::existParam('pickup_pref')) {
+        $pickup_pref = Params::getParam('pickup_pref');
+        $conn = DBConnectionClass::newInstance()->getOsclassDb();
+        $dao = new DBCommandClass($conn);
+        $dao->update(
+            DB_TABLE_PREFIX . 't_user',
+            ['pickup_pref' => $pickup_pref],
+            ['pk_i_id' => $userId]
+        );
+    }
+}
+
+osc_add_hook('user_edit_completed', 'bgs_save_pickup_pref');
  
 ?>

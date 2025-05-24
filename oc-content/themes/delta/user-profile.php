@@ -101,7 +101,14 @@
               <div class="row">
                 <label for="payment_pref"><?php _e('Payment Preferences'); ?></label>
                 <div class="input-box">
-                  <textarea name="payment_pref" id="payment_pref" rows="10"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
+                  <textarea name="payment_pref" id="payment_pref" rows="5"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <label for="pickup_pref"><?php _e('Pickup Preferences'); ?></label>
+                <div class="input-box">
+                  <textarea name="pickup_pref" id="pickup_pref" rows="5"><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></textarea>
                 </div>
               </div>
 
