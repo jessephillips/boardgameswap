@@ -3603,5 +3603,20 @@ function bgs_save_pickup_pref($userId) {
 }
 
 osc_add_hook('user_edit_completed', 'bgs_save_pickup_pref');
+
+function bgs_save_wishlist($userId) {
+    if (Params::existParam('bgs_wishlist')) {
+        $bgs_wishlist = Params::getParam('bgs_wishlist');
+        $conn = DBConnectionClass::newInstance()->getOsclassDb();
+        $dao = new DBCommandClass($conn);
+        $dao->update(
+            DB_TABLE_PREFIX . 't_user',
+            ['bgs_wishlist' => $bgs_wishlist],
+            ['pk_i_id' => $userId]
+        );
+    }
+}
+
+osc_add_hook('user_edit_completed', 'bgs_save_wishlist');
  
 ?>

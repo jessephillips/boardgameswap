@@ -525,6 +525,10 @@
             <div class="title">PAYMENT Preferences</div>
             <q><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></q>
           </div>
+          <div class="row">
+            <div class="title">Games I would <em>possibly</em> trade for:</div>
+          <?php echo osc_esc_html(osc_user_field('bgs_wishlist')); ?>
+        </div><!-- bgs-wishlist -->
         </div><!-- seller-prefs -->
 
         <div class="row">

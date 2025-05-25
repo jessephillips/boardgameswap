@@ -97,6 +97,13 @@
                 <label for="phoneLand"><?php _e('Land Phone', 'delta'); ?></label>
                 <div class="input-box"><?php UserForm::phone_land_text(osc_user()); ?></div>
               </div>
+
+              <div class="row">
+                <label for="bgs_wishlist"><?php _e('Game Wishlist: Games I want and would possibly trade my games for'); ?></label>
+                <div class="input-box">
+                  <textarea name="bgs_wishlist" id="bgs_wishlist" rows="5"><?php echo osc_esc_html(osc_user_field('bgs_wishlist')); ?></textarea>
+                </div>
+              </div>
               
               <div class="row">
                 <label for="payment_pref"><?php _e('Payment Preferences'); ?></label>
