@@ -137,7 +137,7 @@
 
       <!-- LATEST LISTINGS BLOCK -->
       <div id="latest" class="products grid">
-        <h2><?php _e('Recently added on our classifieds', 'delta'); ?></h2>
+        <h2><?php _e('Recently added Games', 'delta'); ?></h2>
 
         <?php View::newInstance()->_exportVariableToView('latestItems', del_random_items()); ?>
 

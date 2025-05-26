@@ -4,6 +4,10 @@
   *
   **************************************************/
 
+/* Home Page */
+#home-search .col.c1{width:calc(100% - 68px);}
+
+/* Item.php / Listing */
 #listing .seller-prefs .item {width: calc(50% - 10px); margin-right: 10px;}
 #listing .seller-prefs .right {float: left; margin-left: 10px;}
 #listing .seller-prefs .title {font-weight: bold; margin-bottom: 10px;}
