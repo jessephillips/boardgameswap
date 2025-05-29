@@ -8,7 +8,7 @@
     $itemviewer = (Params::getParam('itemviewer') == 1 ? 1 : 0);
     $item_extra = del_item_extra(osc_item_id());
 
-    $location_array = array(osc_item_city(), osc_item_region(), osc_item_country_code());
+    $location_array = array(osc_item_city_area(), osc_item_city(), osc_item_region(), osc_item_country_code());
     $location_array = array_filter($location_array);
     $location = implode(', ', $location_array);
 
@@ -419,98 +419,6 @@
         
         $user_about = nl2br(strip_tags(osc_user_info()));
       ?>
-
-      <!-- REGISTERED USERS BLOCK -->
-      <?php if(osc_item_user_id() > 0) { ?>
-        <div class="wbox" id="about">
-          <h2><?php echo sprintf(__('%s\'s profile', 'delta'), $item_user['s_name']); ?></h2>
-          
-          <div class="lb">
-            <div class="user-card">
-              <div class="image">
-                <img src="<?php echo del_profile_picture($item_user['pk_i_id'], 'large'); ?>" alt="<?php echo osc_esc_html($contact_name); ?>"/>
-              </div>
-              
-              <strong class="name"><?php echo $item_user['s_name']; ?></strong>
-              
-              <?php if(function_exists('ur_show_rating_link') && osc_item_user_id() > 0) { ?>
-                <span class="ur-fdb">
-                  <span class="strs"><?php echo ur_show_rating_stars(); ?></span>
-                  <span class="lnk"><?php echo ur_add_rating_link(); ?></span>
-                </span>
-              <?php } ?>
-          
-              <span class="posting"><?php echo $reg_type; ?></span>
-              
-              <?php if($last_online != '') { ?>
-                <span class="lastonline"><?php echo $last_online; ?></span>
-              <?php } ?>
-            </div>
-          </div>
-          
-          <div class="rb">
-            <strong class="about-head"><?php echo __('Seller\'s description', 'delta'); ?></strong>
-            <span class="about"><?php echo (trim($user_about) <> '' ? $user_about : __('No description left by seller', 'delta')); ?></span>
-
-            <?php if($item_user_land_login_required) { ?>
-              <div class="extra">
-                <a href="<?php echo osc_user_login_url(); ?>" class="" title="<?php echo osc_esc_html(__('Login to show number', 'delta')); ?>">
-                  <span><?php _e('Login to show number', 'delta'); ?></span>
-                </a>
-              </div>            
-            <?php } else if($item_user_land_found) { ?>
-              <div class="extra">
-                <a href="#" class="mobile" data-phone="<?php echo $item_user_land; ?>" title="<?php echo osc_esc_html(__('Click to show number', 'delta')); ?>">
-                  <span><?php echo substr($item_user_land, 0, strlen($item_user_land) - 4) . 'xxxx'; ?></span>
-                </a>
-              </div>
-            <?php } ?>
-
-            <?php if($item_user_mobile_login_required) { ?>
-              <div class="extra">
-                <a href="<?php echo osc_user_login_url(); ?>" class="" title="<?php echo osc_esc_html(__('Login to show number', 'delta')); ?>">
-                  <span><?php _e('Login to show number', 'delta'); ?></span>
-                </a>
-              </div>            
-            <?php } else if($item_user_mobile_found) { ?>
-              <div class="extra">
-                <a href="#" class="mobile" data-phone="<?php echo $item_user_mobile; ?>" title="<?php echo osc_esc_html(__('Click to show number', 'delta')); ?>">
-                  <span><?php echo substr($item_user_mobile, 0, strlen($item_user_mobile) - 4) . 'xxxx'; ?></span>
-                </a>
-              </div>
-            <?php } ?>
-
-            <?php if($item_user_location <> '') { ?>
-              <strong class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <?php echo $item_user_location; ?>
-              </strong>
-            <?php } ?>   
-
-          </div>
-          
-
-          <div class="links">
-            <a href="<?php echo osc_user_public_profile_url(osc_item_user_id()); ?>">
-              <svg viewBox="0 0 32 32" width="14" height="14"><defs><path id="mbIconHome" d="M26.05 27.328a.862.862 0 01-.86.861h-4.982V17.41h-9v10.78H6.227a.863.863 0 01-.862-.862V13.125L15.634 2.82 26.05 13.082v14.246zm-12.842.861h5V19.41h-5v8.78zM31.41 15.552L15.62 0 0 15.676l1.416 1.412 1.949-1.956v12.196a2.865 2.865 0 002.862 2.861H25.19a2.864 2.864 0 002.86-2.86V15.051l1.956 1.925 1.404-1.425z"></path></defs><use fill="currentColor" xlink:href="#mbIconHome" fill-rule="evenodd" transform="translate(0 1)"></use></svg>
-              <span><?php _e('Public profile', 'delta'); ?></span>
-            </a>
-
-            <a href="<?php echo osc_search_url(array('page' => 'search', 'userId' => osc_item_user_id())); ?>">
-              <svg viewBox="0 0 32 32" width="14" height="14"><defs><path id="mbIconSearch" d="M12.618 23.318c-6.9 0-10.7-3.8-10.7-10.7 0-6.9 3.8-10.7 10.7-10.7 6.9 0 10.7 3.8 10.7 10.7 0 3.458-.923 6.134-2.745 7.955-1.821 1.822-4.497 2.745-7.955 2.745zm17.491 5.726l-7.677-7.678c1.854-2.155 2.804-5.087 2.804-8.748C25.236 4.6 20.636 0 12.618 0S0 4.6 0 12.618c0 8.019 4.6 12.618 12.618 12.618 3.485 0 6.317-.85 8.44-2.531l7.696 7.695 1.355-1.356z"></path></defs><use fill="currentColor" xlink:href="#mbIconSearch" fill-rule="evenodd"></use></svg>
-              <span><?php _e('All seller listings', 'delta'); ?></span>
-            </a>
-
-            <?php if (trim(osc_user_website()) != '') { ?>
-              <a href="<?php echo osc_user_website(); ?>">
-                <svg viewBox="0 0 32 32" width="14" height="14"><defs><path id="mbIconExternal" d="M21.77 4.424l5.277-1.414-1.414 5.278-3.863-3.864zM29.874.18l-3.207 11.97-3.703-3.705-9.76 9.761-1.414-1.414 9.76-9.761-3.644-3.644L29.874.18zM22 24.323V14h2v10.324A5.682 5.682 0 0118.324 30H5.676A5.682 5.682 0 010 24.323V11.675A5.682 5.682 0 015.676 6H16v2H5.676A3.68 3.68 0 002 11.675v12.648A3.68 3.68 0 005.676 28h12.648A3.68 3.68 0 0022 24.323z"></path></defs><use fill="currentColor" xlink:href="#mbIconExternal" fill-rule="evenodd" transform="translate(1 1)"></use></svg>
-                <span><?php echo osc_user_website(); ?></span>
-              </a>
-            <?php } ?>
-          </div>
-        </div>
-      <?php } ?>
-      
       
       <!-- CONTACT BLOCK -->
       <div class="wbox" id="contact">
@@ -801,12 +709,26 @@
     <div class="side">
       <?php osc_run_hook('item_sidebar_top'); ?>
       
+      <div class="wbox location">
+        <h2><?php _e('Listing location', 'delta'); ?></h2>
+        
+        <?php if($location <> '') { ?>
+          <div class="row">
+            <strong><?php echo $location; ?></strong>
+          </div>
+          
+        <?php } else { ?>
+          <div class="row unknw"><?php _e('Unknown location', 'delta'); ?></div>
+        <?php } ?>
+        
+        <div class="loc-hook">
+          <?php osc_run_hook('location'); ?>
+        </div>
+      </div>
+
       <div class="wbox" id="seller">
         <h2>
           <?php _e('Seller details', 'delta'); ?>
-          <?php if(osc_item_user_id() > 0) { ?>
-            <a href="#about" class="hbtn"><?php _e('Details', 'delta'); ?></a>
-          <?php } ?>
         </h2>
         
         <div class="user-box">
@@ -897,34 +819,6 @@
           <?php echo sp_buttons(osc_item_id());?>
         </div>
       <?php } ?>
-
-
-      <div class="wbox location">
-        <h2><?php _e('Listing location', 'delta'); ?></h2>
-        
-        <?php if($location2 <> '') { ?>
-          <div class="row">
-            <strong><?php echo $location2; ?></strong>
-          </div>
-          
-          <?php if(osc_item_latitude() <> 0 && osc_item_longitude() <> 0) { ?>
-            <div class="row latlong"><?php echo osc_item_latitude(); ?>, <?php echo osc_item_longitude(); ?></div> 
-          <?php } ?>
-          
-          <div class="row">
-            <a class="dir" target="_blank" href="https://maps.google.com/maps?daddr=<?php echo urlencode($location2); ?>">
-              <i class="fas fa-map-marked-alt"></i>
-              <?php _e('Get directions', 'delta'); ?>
-            </a>
-          </div>
-        <?php } else { ?>
-          <div class="row unknw"><?php _e('Unknown location', 'delta'); ?></div>
-        <?php } ?>
-        
-        <div class="loc-hook">
-          <?php osc_run_hook('location'); ?>
-        </div>
-      </div>
 
 
       <?php echo del_banner('item_sidebar'); ?>

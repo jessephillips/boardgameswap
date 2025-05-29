@@ -316,7 +316,7 @@
               <?php ItemForm::title_input('title', osc_current_user_locale(), osc_esc_html(del_post_item_title())); ?>
             </div>
             
-            <label for="description[<?php echo osc_current_user_locale(); ?>]"><?php _e('Description', 'delta'); ?> *</label>
+            <label for="description[<?php echo osc_current_user_locale(); ?>]"><?php _e('Description', 'delta'); ?> &#40;optional&#41;</label>
             <div class="td-wrap d1 row">
               <?php ItemForm::description_textarea('description', osc_current_user_locale(), osc_esc_html(del_post_item_description())); ?>
             </div>
@@ -656,7 +656,7 @@
 
         "description[<?php echo osc_current_user_locale(); ?>]": {
           required: false, // jesse-change need to make this not required
-          minlength: 10
+          // minlength: 0 // jesse-change
         },
 
         <?php if(strpos($required_fields, 'location') !== false) { ?>
