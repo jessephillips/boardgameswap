@@ -13,6 +13,11 @@
 #listing .seller-prefs .title {font-weight: bold; margin-bottom: 10px;}
 #listing .seller-prefs q {font-style: italic;}
 
+/***********************
+  * End - Board Game Swap Custom
+  **********************/
+
+
 /* ALERTS FREQUENCY */
 .alert-frequency {display:flex;float: left; align-items: center; flex-wrap: nowrap;margin:6px 0 12px 0;}
 .alerts-box .head-row .data div.alert-frequency {margin-top:10px;}
@@ -1409,7 +1414,7 @@ body .realestate-details table tr {display:inline-block;}
 #listing .side .line2 a {float:left;clear:both;width:100%;text-align:center;padding:10px;margin:0 0 8px 0;border:1px solid rgba(0,0,0,0.1);border-radius:5px;font-size:13px;line-height:16px;transition:0.1s;}
 #listing .side .line2 a:hover {border-color:rgba(0,0,0,0.15);}
 #listing .item > div.stats {margin:0 0 20px 0;}
-#listing .wbox h1 .price {float:right;margin-left:15px;}
+#listing .wbox h1 .price {float:left;margin-right:15px;}
 
 #listing #contact h2, #listing #comment h2, #listing #about h2, #listing #user-items h2 {text-align:left;padding-bottom:15px;margin-bottom:18px;border-bottom:1px solid #ddd;}
 #listing #contact label {font-size:13px;margin:0 0 3px 0;}

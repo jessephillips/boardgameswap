@@ -141,10 +141,8 @@
 <section class="content loc-<?php echo $loc; ?> sec-<?php echo $sec; ?>">
 
 <?php
-  if(osc_is_home_page()) { 
     osc_current_web_theme_path('inc.search.php'); 
     // osc_current_web_theme_path('inc.category.php'); // jesse-change. remove categories from home page, I don't like them!
-  }
 ?>
 
 <div class="flash-box">
@@ -162,6 +160,8 @@
 ?>
 
 <?php if($breadcrumb != '') { ?>
+  <!-- jesse-change remove breadcrumbs -->
+  <!--
   <div id="bread">
     <div class="inside">
       <div class="wrap">
@@ -197,4 +197,5 @@
       </div>
     </div>
   </div>
+        -->
 <?php } ?>
