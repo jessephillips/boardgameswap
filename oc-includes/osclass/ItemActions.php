@@ -126,17 +126,17 @@ class ItemActions {
     
     $flash_error .= $title_message;
 
-    $desc_message = '';
-    foreach (@$aItem['description'] as $key => $value) {
-      if (osc_validate_text($value, 3) && osc_validate_max($value, osc_max_characters_per_description())) {
-        $desc_message = '';
-        break;
-      }
+    // $desc_message = '';
+    // foreach (@$aItem['description'] as $key => $value) {
+    //   if (osc_validate_text($value, 3) && osc_validate_max($value, osc_max_characters_per_description())) {
+    //     $desc_message = '';
+    //     break;
+    //   }
 
-      $desc_message .= (!osc_validate_text($value, 3) ? sprintf(_m('Description too short (%s).'), $key) . PHP_EOL : '');
-      $desc_message .= (!osc_validate_max($value, osc_max_characters_per_description()) ? sprintf(_m('Description too long (%s).'), $key) . PHP_EOL : '');
-    }
-    $flash_error .= $desc_message;
+    //   $desc_message .= (!osc_validate_text($value, 3) ? sprintf(_m('Description too short (%s).'), $key) . PHP_EOL : '');
+    //   $desc_message .= (!osc_validate_max($value, osc_max_characters_per_description()) ? sprintf(_m('Description too long (%s).'), $key) . PHP_EOL : '');
+    // }
+    // $flash_error .= $desc_message;
 
     // akismet check spam ...
     if ($this->_akismet_text($aItem['title'], $aItem['description'], $contactName, $contactEmail)) {

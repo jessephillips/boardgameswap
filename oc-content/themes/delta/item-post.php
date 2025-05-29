@@ -655,7 +655,7 @@
         },
 
         "description[<?php echo osc_current_user_locale(); ?>]": {
-          required: true,
+          required: false, // jesse-change need to make this not required
           minlength: 10
         },
 
