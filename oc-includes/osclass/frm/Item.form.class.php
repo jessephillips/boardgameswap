@@ -508,11 +508,12 @@ class ItemForm extends Form {
   * @param    $name
   * @param string $locale
   * @param string $value
+  * @param number $numRows
   *
   * @return bool
   */
-  public static function description_textarea($name , $locale = 'en_US' , $value = '') {
-    parent::generic_textarea($name . '[' . $locale . ']', $value);
+  public static function description_textarea($name , $locale = 'en_US' , $value = '', $numRows = 10) {
+    parent::generic_textarea($name . '[' . $locale . ']', $value, $numRows);
     return true;
   }
 

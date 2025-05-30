@@ -155,9 +155,10 @@ class Form {
   /**
   * @param $name
   * @param $value
+  * @param number $numRows
   */
-  protected static function generic_textarea( $name , $value ) {
+  protected static function generic_textarea( $name , $value, $numRows = 10 ) {
     $name = osc_esc_html($name);
-    echo '<textarea id="' . preg_replace('|([^_a-zA-Z0-9-]+)|', '', $name) . '" name="' . $name . '" rows="10">' . $value . '</textarea>';
+    echo '<textarea id="' . preg_replace('|([^_a-zA-Z0-9-]+)|', '', $name) . '" name="' . $name . '" rows="'. $numRows . '">' . $value . '</textarea>';
   }
 }

@@ -4,6 +4,9 @@
   *
   **************************************************/
 
+/* General */
+.flex-container { display: flex; }
+
 /* Home Page */
 #home-search .col.c1{width:calc(100% - 68px);}
 
@@ -12,6 +15,11 @@
 #listing .seller-prefs .right {float: left; margin-left: 10px;}
 #listing .seller-prefs .title {font-weight: bold; margin-bottom: 10px;}
 #listing .seller-prefs q {font-style: italic;}
+
+/* Item-post.php | posting an ad */
+.post-edit .price-wrap .input-box { margin: 0; }
+.post-edit .condition {width:50%; margin-left: 20px;}
+.post-edit .condition select {width: 100%;}
 
 /***********************
   * End - Board Game Swap Custom
@@ -1128,17 +1136,17 @@ body.layout-h .home-container.wrap #bpr-seller.bpr-block { margin: 0 auto; float
 .post-edit .status-wrap .transaction {float:left;width:50%;padding-right:15px;clear:both;}
 .post-edit .status-wrap .condition {float:left;width:50%;padding-left:15px;}
 .post-edit .row {display:inline-block;width:100%;}
-.post-edit .row.category.simple {margin:0 0 25px 0;}
+/* .post-edit .row.category.simple {margin:0 0 25px 0;} jesse-change */
 .post-edit .input-box, .post-edit #location-picker{display:inline-block;float:none;margin:0 0 20px 0;}
 .post-edit #location-picker {z-index:initial;}
 .post-edit #category-picker {z-index:initial;}
-.post-edit .price-wrap {display:inline-block;width:100%;}
-.post-edit .price-wrap .enter {width:65%;float:left;clear:both;transition:0.1s;padding-right:80px;position:relative;}
+.post-edit .price-wrap {display:inline-block;width:50%;}
+.post-edit .price-wrap .enter {width:50%;float:left;clear:both;transition:0.1s;padding-right:20px;position:relative;}
 .post-edit .price-wrap .enter > .input-box {display:block!important;}
 .post-edit .price-wrap .enter.disable {opacity:0.4;}
 .post-edit .price-wrap .enter.disable #price {color:transparent;}
 .post-edit .price-wrap .enter .or {position:absolute;height:36px;line-height:36px;width:50px;text-align:center;font-size:13px;color:#999;right:15px;top:0;white-space:nowrap;}
-.post-edit .price-wrap .enter #price {padding-left:105px;}
+.post-edit .price-wrap .enter #price {}
 .post-edit .price-wrap .enter .simple-select {position:absolute;left:0px;top:0px;width:90px;}
 .post-edit .price-wrap .enter .simple-select .text {border-top-right-radius:0;border-bottom-right-radius:0;z-index:2;border:1px solid #ccc;}
 .post-edit .price-wrap .enter .simple-select:not(.opened) .text {background:#e0e0e0;}

@@ -80,7 +80,7 @@
   <?php osc_current_web_theme_path('header.php') ; ?>
 
   <div class="inside add_item post-edit">
-    <h1><?php echo (!$edit ? __('Publish a new listing', 'delta') : __('Edit listing', 'delta')); ?></h1>
+    <h1><?php echo (!$edit ? __('List a Game', 'delta') : __('Edit listing', 'delta')); ?></h1>
 
     <ul id="error_list" class="new-item"></ul>
 
@@ -95,17 +95,62 @@
 
       <?php osc_run_hook('item_publish_top'); ?>
 
+      <!-- Title and Description -->
+      <fieldset class="s5">
+        <h2><?php _e('Description', 'delta'); ?></h2>
+
+        <div class="in">
+          <div class="title-desc-box">
+            <label for="title[<?php echo osc_current_user_locale(); ?>]"><?php _e('Title', 'delta'); ?> *</label>
+            <div class="td-wrap t1 row">
+              <?php ItemForm::title_input('title', osc_current_user_locale(), osc_esc_html(del_post_item_title())); ?>
+            </div>
+            
+            <label for="description[<?php echo osc_current_user_locale(); ?>]"><?php _e('Description', 'delta'); ?> &#40;optional&#41;</label>
+            <div class="td-wrap d1 row">
+              <?php ItemForm::description_textarea('description', osc_current_user_locale(), osc_esc_html(del_post_item_description()), 3); ?>
+            </div>
+          </div>
+          
+          <?php osc_run_hook('item_publish_description'); ?>
+        </div>
+      </fieldset>
+
+      <fieldset class="s4">
+        <div class="in">
+          <!-- PRICE -->
+          <?php if(osc_price_enabled_at_items()) { ?>
+              <div class="flex-container">
+                <div class="price-wrap">
+                  <label for="price"><?php _e('Price', 'delta'); ?></label>
+                  <div class="input-box">
+                    <?php ItemForm::price_input_text(); ?>
+                    <?php //echo del_simple_currency(); ?>
+                  </div>
+                </div>
+                <!-- CONDITION -->
+                <div class="condition">
+                    <label for="sCondition"><?php _e('Condition', 'delta'); ?></label>
+                    <?php echo del_simple_condition(true); ?>
+                </div>
+              </div>
+          <?php } ?>
+          
+          <?php osc_run_hook('item_publish_price'); ?>
+        </div>
+      </fieldset>
+
       <fieldset class="s1">
         <h2><?php _e('Category', 'delta'); ?></h2>
  
         <div class="in">
           <!-- CATEGORY -->
-          <?php $category_type = (del_param('publish_category') == '' ? 1 : del_param('publish_category')); ?>
+          <?php $category_type = 3; //(del_param('publish_category') == '' ? 1 : del_param('publish_category')); ?>
 
           <?php if($category_type == 1) { ?>
 
             <div class="row category flat">
-              <label for="catId"><span><?php _e('Select a category', 'delta'); ?></span><span class="req">*</span></label>
+              <label for="catId"><span><?php _e('Transaction Type', 'delta'); ?></span><span class="req">*</span></label>
               <div class="input-box"><?php echo del_simple_category(false, 3, 'catId'); ?></div>
             </div>
 
@@ -119,8 +164,8 @@
           <?php } else if($category_type == 3) { ?>
 
             <div class="row category simple">
-              <label for="catId"><span><?php _e('Category', 'delta'); ?></span><span class="req">*</span></label>
-              <?php ItemForm::category_select(null, Params::getParam('sCategory'), __('Select a category', 'delta')); ?>
+              <label for="catId"><span><?php _e('Transaction Type', 'delta'); ?></span><span class="req">*</span></label>
+              <?php ItemForm::category_select(null, Params::getParam('sCategory'), __('Select a Transaction Type', 'delta')); ?>
             </div>
 
           <?php } else if ($category_type == 4) { ?>
@@ -258,71 +303,6 @@
           </div>
           
           <?php osc_run_hook('item_publish_seller'); ?>
-        </div>
-      </fieldset>
-
-
-      <fieldset class="s4">
-        <div class="in">
-          <!-- PRICE -->
-          <?php if(osc_price_enabled_at_items()) { ?>
-            <label for="price"><?php _e('Price', 'delta'); ?></label>
-
-            <div class="price-wrap">
-              <div class="inside">
-                <div class="enter<?php if($price_type == 'FREE' || $price_type == 'CHECK') { ?> disable<?php } ?>">
-                  <div class="input-box">
-                    <?php ItemForm::price_input_text(); ?>
-                    <?php echo del_simple_currency(); ?>
-                  </div>
-
-                  <div class="or"><?php _e('or', 'delta'); ?></div>
-                </div>
-                
-                <div class="selection">
-                  <a href="#" data-price="0" <?php if($price_type == 'FREE') { ?>class="active"<?php } ?> title="<?php echo osc_esc_html(__('Item is offered for free', 'delta')); ?>"><span class="isTablet isDesktop"><?php _e('Free', 'delta'); ?></span><span class="isMobile"><?php _e('Item for free', 'delta'); ?></span></a>
-                  <a href="#" data-price="" <?php if($price_type == 'CHECK') { ?>class="active"<?php } ?> title="<?php echo osc_esc_html(__('Based on agreement with seller', 'delta')); ?>"><span class="isTablet isDesktop"><?php _e('Deal', 'delta'); ?></span><span class="isMobile"><?php _e('Check with seller', 'delta'); ?></span></a>
-                </div>
-              </div>
-            </div>
-          <?php } ?>
-
-
-          <!-- CONDITION & TRANSACTION -->
-          <div class="status-wrap">
-            <div class="transaction">
-              <label for="sTransaction"><?php _e('Transaction', 'delta'); ?></label>
-              <?php echo del_simple_transaction(); ?>
-            </div>
-
-            <div class="condition">
-              <label for="sCondition"><?php _e('Condition', 'delta'); ?></label>
-              <?php echo del_simple_condition(); ?>
-            </div>
-          </div>
-          
-          <?php osc_run_hook('item_publish_price'); ?>
-        </div>
-      </fieldset>
-
-
-      <fieldset class="s5">
-        <h2><?php _e('Description', 'delta'); ?></h2>
-
-        <div class="in">
-          <div class="title-desc-box">
-            <label for="title[<?php echo osc_current_user_locale(); ?>]"><?php _e('Title', 'delta'); ?> *</label>
-            <div class="td-wrap t1 row">
-              <?php ItemForm::title_input('title', osc_current_user_locale(), osc_esc_html(del_post_item_title())); ?>
-            </div>
-            
-            <label for="description[<?php echo osc_current_user_locale(); ?>]"><?php _e('Description', 'delta'); ?> &#40;optional&#41;</label>
-            <div class="td-wrap d1 row">
-              <?php ItemForm::description_textarea('description', osc_current_user_locale(), osc_esc_html(del_post_item_description())); ?>
-            </div>
-          </div>
-          
-          <?php osc_run_hook('item_publish_description'); ?>
         </div>
       </fieldset>
 
