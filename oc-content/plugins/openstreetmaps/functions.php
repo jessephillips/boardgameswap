@@ -463,12 +463,12 @@ function osm_cords_insert($item, $is_user = false) {
   $lng_city = $cords_item_city['lng'];
 
   if($is_user === false) {
-    $check_cords = ModelOSM::newInstance()->checkCords($lat, $lng);
+    // $check_cords = ModelOSM::newInstance()->checkCords($lat, $lng); // jesse I want to always jitter the lat and lng
 
-    if($check_cords) {
+    //if($check_cords) {
       $lat = osm_shift($lat);
       $lng = osm_shift($lng);
-    }
+    //}
   }
   
   
