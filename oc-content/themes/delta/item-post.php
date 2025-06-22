@@ -122,7 +122,7 @@
           <?php if(osc_price_enabled_at_items()) { ?>
               <div class="flex-container">
                 <div class="price-wrap">
-                  <label for="price"><?php _e('Price', 'delta'); ?></label>
+                  <label for="price"><?php _e('Price (Or monthly fee if this is a rental)', 'delta'); ?></label>
                   <div class="input-box">
                     <?php ItemForm::price_input_text(); ?>
                     <?php //echo del_simple_currency(); ?>
@@ -145,7 +145,7 @@
  
         <div class="in">
           <!-- CATEGORY -->
-          <?php $category_type = 3; //(del_param('publish_category') == '' ? 1 : del_param('publish_category')); ?>
+          <?php $category_type = 1; //(del_param('publish_category') == '' ? 1 : del_param('publish_category')); ?>
 
           <?php if($category_type == 1) { ?>
 
@@ -195,6 +195,7 @@
           <?php } ?>
           
           <?php osc_run_hook('item_publish_category'); ?>
+          For Rent or Lend the price is a monthly rental price. If you want to trade, update the game wishlist on your profile to show the games you're interested in on this listing.
         </div>
       </fieldset>
 
@@ -256,41 +257,14 @@
 
         <div class="in">
           <div class="seller<?php if(osc_is_web_user_logged_in() ) { ?> logged<?php } ?>">
-            <div class="row name">
-              <label for="contactName"><?php _e('Your Name', 'delta'); ?><?php if(strpos($required_fields, 'name') !== false) { ?><span class="req">*</span><?php } ?></label>
+            <div class="row name-wide">
+              <label for="contactName"><?php _e('Your Name (displayed on listing)', 'delta'); ?><?php if(strpos($required_fields, 'name') !== false) { ?><span class="req">*</span><?php } ?></label>
               <div class="input-box"><?php ItemForm::contact_name_text($prepare); ?></div>
-            </div>
-          
-            <div class="row phone">
-              <label for="phone"><?php _e('Mobile Phone', 'delta'); ?><?php if(strpos($required_fields, 'phone') !== false) { ?><span class="req">*</span><?php } ?></label>
-              <div class="input-box">
-                <?php if(method_exists('ItemForm', 'contact_phone_text')) { ?>
-                  <?php ItemForm::contact_phone_text($prepare); ?>
-                <?php } else { ?>
-                  <input type="tel" id="sPhone" name="sPhone" value="<?php echo $prepare['s_phone']; ?>" />
-                <?php } ?>
-              </div>
-              
-              <?php if(method_exists('ItemForm', 'show_phone_checkbox')) { ?>
-                <div class="mail-show">
-                  <div class="input-box-check">
-                    <?php ItemForm::show_phone_checkbox() ; ?>
-                    <label for="showPhone" class="label-mail-show"><?php _e('Phone visible on ad', 'delta'); ?></label>
-                  </div>
-                </div>
-              <?php } ?>
             </div>
 
             <div class="row user-email">
               <label for="contactEmail"><span><?php _e('E-mail', 'delta'); ?></span><span class="req">*</span></label>
               <div class="input-box"><?php ItemForm::contact_email_text($prepare); ?></div>
-
-              <div class="mail-show">
-                <div class="input-box-check">
-                  <?php ItemForm::show_email_checkbox() ; ?>
-                  <label for="showEmail" class="label-mail-show"><?php _e('Email visible on ad', 'delta'); ?></label>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -631,7 +605,7 @@
       rules: {
         "title[<?php echo osc_current_user_locale(); ?>]": {
           required: true,
-          minlength: 5
+          minlength: 3
         },
 
         "description[<?php echo osc_current_user_locale(); ?>]": {
@@ -704,7 +678,7 @@
       messages: {
         "title[<?php echo osc_current_user_locale(); ?>]": {
           required: '<?php echo osc_esc_js(__('Title: this field is required.', 'delta')); ?>',
-          minlength: '<?php echo osc_esc_js(__('Title: enter at least 5 characters.', 'delta')); ?>'
+          minlength: '<?php echo osc_esc_js(__('Title: enter at least 3 characters.', 'delta')); ?>'
         },
 
         "description[<?php echo osc_current_user_locale(); ?>]": {
