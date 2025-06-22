@@ -181,7 +181,7 @@
         <div class="basic isDesktop isTablet">
           <h1>
             <?php if(del_check_category_price(osc_item_category_id())) { ?>
-              <div class="price mbCl3 p-<?php echo osc_item_price(); ?>x<?php if(osc_item_price() <= 0) { ?> isstring<?php } ?>"><?php echo osc_item_formated_price(); ?></div>
+              <div class="price p-<?php echo osc_item_price(); ?>x<?php if(osc_item_price() <= 0) { ?> isstring<?php } ?>">&#36;<?php echo osc_item_formated_price(); ?></div>
             <?php } ?>
             
             <?php echo osc_item_title(); ?>
@@ -336,25 +336,13 @@
         </div>
 
 
-        <!-- DESCRIPTION -->
+
         <div class="data">
           <?php del_make_favorite(); ?>
-
-          <div class="description">
-            <h2><?php _e('Description', 'delta'); ?></h2>
-
-            <div class="text">
-              <?php echo osc_item_description(); ?>
-            </div>
-          </div>
-          
-          <?php osc_run_hook('item_description'); ?>
-
 
           <!-- CUSTOM FIELDS -->
           <?php if($has_cf || $item_extra['i_transaction'] <> '' || $item_extra['i_condition'] <> '') { ?>
             <div class="custom-fields">
-              <h2><?php _e('Attributes', 'delta'); ?></h2>
 
               <div class="list">
                 <?php if(!in_array(osc_item_category_id(), del_extra_fields_hide())) { ?>
@@ -388,6 +376,17 @@
           <?php } ?>
           
           <?php osc_run_hook('item_meta'); ?>
+
+          <!-- DESCRIPTION -->
+          <div class="description">
+            <h2><?php _e('Description', 'delta'); ?></h2>
+
+            <div class="text">
+              <?php echo osc_item_description(); ?>
+            </div>
+          </div>
+          
+          <?php osc_run_hook('item_description'); ?>
 
      
           <!-- PLUGIN HOOK -->
@@ -426,15 +425,14 @@
         
         <div class="seller-prefs">
           <div class="item">
-            <div class="title">Seller&#39;s PICKUP Preferences</div>
-            <q><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></q>
+            <div class="title"><strong>Seller&#39;s PICKUP Preferences:</strong> <q><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></q></div>
+            
           </div>
-          <div class="right">
-            <div class="title">PAYMENT Preferences</div>
-            <q><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></q>
+          <div class="item">
+            <div class="title"><strong>PAYMENT Preferences:</strong> <q><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></q></div>
           </div>
-          <div class="row">
-            <div class="title">Games I would <em>possibly</em> trade for:</div>
+          <div class="item">
+            <div class="title"><strong>Seller&apos;s Wishlist. They might <em>possibly</em> be willing to trade for one of these:</strong></div>
           <?php echo osc_esc_html(osc_user_field('bgs_wishlist')); ?>
         </div><!-- bgs-wishlist -->
         </div><!-- seller-prefs -->

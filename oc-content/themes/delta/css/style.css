@@ -11,10 +11,8 @@
 #home-search .col.c1{width:calc(100% - 68px);}
 
 /* Item.php / Listing */
-#listing .seller-prefs .item {width: calc(50% - 10px); margin-right: 10px;}
-#listing .seller-prefs .right {float: left; margin-left: 10px;}
-#listing .seller-prefs .title {font-weight: bold; margin-bottom: 10px;}
-#listing .seller-prefs q {font-style: italic;}
+#listing .seller-prefs .item {width: 100%; margin: 0 0 10px 0;}
+#listing .seller-prefs q {font-style: italic; font-weight: 100;}
 
 /* Item-post.php | posting an ad */
 .post-edit .price-wrap .input-box { margin: 0; }
