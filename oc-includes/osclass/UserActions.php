@@ -391,6 +391,15 @@ class UserActions {
       $cityNameNative = null;
     }
 
+    // Check for Payment Prefs entered at Registration - jesse-change
+    if (Params::getParam('payment_pref')) {
+      $paymentPref = Params::getParam('payment_pref');
+    } else {
+      $paymentPref = '';
+    }
+
+    $input['payment_pref'] = strip_tags(Params::getParam('payment_pref'));
+    $input['pickup_pref'] = strip_tags(Params::getParam('pickup_pref'));
     $input['fk_c_country_code'] = $countryId;
     $input['s_country'] = $countryName;
     $input['s_country_native'] = $countryNameNative;

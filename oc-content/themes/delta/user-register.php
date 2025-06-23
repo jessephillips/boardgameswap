@@ -66,11 +66,6 @@
                     <span class="input-box"><?php UserForm::email_text(); ?></span>
                   </div>
                   
-                  <div class="row mb">
-                    <label for="phone"><?php _e('Mobile Phone', 'delta'); ?></label>
-                    <span class="input-box last"><?php UserForm::mobile_text(osc_user()); ?></span>
-                  </div>
-                  
                   <div class="row p1">
                     <label for="password"><span><?php _e('Password', 'delta'); ?></span><span class="req">*</span></label>
                     <span class="input-box">
@@ -85,6 +80,20 @@
                       <?php UserForm::check_password_text(); ?>
                       <a href="#" class="toggle-pass" title="<?php echo osc_esc_html(__('Show/hide password', 'delta')); ?>"><i class="fa fa-eye-slash"></i></a>
                     </span>
+                  </div>
+
+                  <div class="row">
+                    <label for="pickup_pref">Pickup Preferences<br><span style="font-weight: normal;">(shown on your listings to make transactions faster/smoother)</span></label>
+                    <div class="input-box">
+                      <textarea name="pickup_pref" id="pickup_pref" class="short-text-area" placeholder="Examples: I prefer porch pickup at my house from 5pm-8pm. OR I prefer meetup at QT Gas station at 123 Street Rd, 9am-5pm Mon,Wed,Fri."><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <label for="payment_pref">Payment Preferences</label>
+                    <div class="input-box">
+                      <textarea name="payment_pref" id="payment_pref" class="short-text-area" placeholder="Examples: Venmo, CashApp, PayPal, Zelle, ApplePay, PayPal, Cash"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
+                    </div>
                   </div>
 
                   <div class="user-reg-hook"><?php osc_run_hook('user_register_form'); ?></div>

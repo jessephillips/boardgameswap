@@ -21,6 +21,9 @@
 .post-edit .category .input-box {margin: 0;}
 .post-edit .seller .name-wide {width: 45%; padding-right: 20px;}
 
+/* register user user-register.php */
+#i-forms textarea.short-text-area {height: 80px; min-height: 80px;}
+
 /***********************
   * End - Board Game Swap Custom
   **********************/
