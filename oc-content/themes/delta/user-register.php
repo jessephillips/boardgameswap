@@ -57,7 +57,7 @@
                   <ul id="error_list"></ul>
 
                   <div class="row nm">
-                    <label for="name"><span><?php _e('Name', 'delta'); ?></span>
+                    <label for="name"><span>First Name with Last Initial</span>
                     <span class="req">*</span></label> <span class="input-box"><?php UserForm::name_text(); ?></span>
                   </div>
                   
@@ -82,6 +82,53 @@
                     </span>
                   </div>
 
+                  <!-- Address Info -->
+                  <fieldset class="s2">
+                    <div class="in">
+                      <input type="hidden" name="countryId" id="countryId" class="sCountry" value="<?php echo $user['fk_c_country_code']; ?>"/>
+                <input type="hidden" name="regionId" id="regionId" class="sRegion" value="<?php echo $user['fk_i_region_id']; ?>"/>
+                <input type="hidden" name="cityId" id="cityId" class="sCity" value="<?php echo $user['fk_i_city_id']; ?>"/>
+                      <div id="location-picker" class="loc-picker picker-v2 ctr-<?php echo (del_count_countries() == 1 ? 'one' : 'more'); ?>">
+                        <label for="term2"><span><?php _e('Where is your pickup/meetup location?', 'delta'); ?></span><span class="req">*</span></label>
+
+                        <div class="mini-box">
+                          <input type="text" id="term2" class="term2" placeholder="<?php _e('City/Region', 'delta'); ?>" value="<?php echo del_get_term('', $prepare['i_country'], $prepare['i_region'], $prepare['i_city']); ?>" autocomplete="off" readonly/>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        
+                        <?php $countries = Country::newInstance()->listAll(); ?>
+
+                        <div class="shower-wrap">
+                          <div id="shower" class="shower <?php if(is_array($countries) && count($countries) > 1) { ?>multi-country<?php } ?>">
+                            <?php echo del_locbox_short($prepare['i_country'], $prepare['i_region'], $prepare['i_city']); ?>
+                            <a href="#" class="btn btn-primary mbBg loc-confirm isMobile"><i class="far fa-check-square"></i> <?php _e('Submit', 'delta'); ?></a>
+
+                            <div class="button-wrap isTablet isDesktop">
+                              <a href="#" class="btn btn-primary mbBg loc-confirm"><i class="far fa-check-square"></i> <?php _e('Submit', 'delta'); ?></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="loader"></div>
+                      </div>
+
+                      <div class="loc-more">
+
+                        <div class="row address">
+                          <label for="address"><?php _e('Address', 'delta'); ?></label>
+                          <div class="input-box"><?php ItemForm::address_text($prepare); ?></div>
+                        </div>
+
+                        <div class="row zip">
+                          <label for="address"><?php _e('ZIP', 'delta'); ?></label>
+                          <div class="input-box"><?php ItemForm::zip_text($prepare); ?></div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </fieldset>
+
+                  <!-- Pickup Pre -->
                   <div class="row">
                     <label for="pickup_pref">Pickup Preferences<br><span style="font-weight: normal;">(shown on your listings to make transactions faster/smoother)</span></label>
                     <div class="input-box">
@@ -89,6 +136,7 @@
                     </div>
                   </div>
 
+                  <!-- Payment Pref -->
                   <div class="row">
                     <label for="payment_pref">Payment Preferences</label>
                     <div class="input-box">
@@ -119,7 +167,7 @@
   
   <script type="text/javascript">
     $(document).ready(function(){
-      $('input[name="s_name"]').attr('placeholder', '<?php echo osc_esc_js(__('First name, Last name', 'delta')); ?>').attr('required', true);
+      $('input[name="s_name"]').attr('placeholder', '<?php echo osc_esc_js(__('John D.', 'delta')); ?>').attr('required', true);
       $('input[name="s_email"]').attr('placeholder', '<?php echo osc_esc_js(__('your.email@dot.com', 'delta')); ?>').attr('required', true).prop('type', 'email');
       $('input[name="s_phone_mobile"]').attr('placeholder', '<?php echo osc_esc_js(__('+XXX XXX XXX', 'delta')); ?>');
       $('input[name="s_password"]').attr('placeholder', '<?php echo osc_esc_js(__('YourPass123!', 'delta')); ?>').attr('required', true);
