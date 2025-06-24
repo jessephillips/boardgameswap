@@ -16,8 +16,8 @@
       <!-- REGISTER FORM -->
       <div id="register" class="box">
         <div class="wrap">
-          <h1><?php _e('Register a new account', 'delta'); ?></h1>
-          <h2><?php _e('It takes you just 1 minute, helps you to create new ads much faster or save prefered searches', 'delta'); ?></h2>
+          <h1><?php _e('Sign Up!', 'delta'); ?></h1>
+          <h2><?php _e('It takes you just 1 minute!', 'delta'); ?></h2>
 
           <div class="user_forms register">
             <div class="inner">
@@ -57,7 +57,7 @@
                   <ul id="error_list"></ul>
 
                   <div class="row nm">
-                    <label for="name"><span>First Name with Last Initial</span>
+                    <label for="name"><span>First Name and Last Initial</span>
                     <span class="req">*</span></label> <span class="input-box"><?php UserForm::name_text(); ?></span>
                   </div>
                   
@@ -86,13 +86,13 @@
                   <fieldset class="s2">
                     <div class="in">
                       <input type="hidden" name="countryId" id="countryId" class="sCountry" value="<?php echo $user['fk_c_country_code']; ?>"/>
-                <input type="hidden" name="regionId" id="regionId" class="sRegion" value="<?php echo $user['fk_i_region_id']; ?>"/>
-                <input type="hidden" name="cityId" id="cityId" class="sCity" value="<?php echo $user['fk_i_city_id']; ?>"/>
+                      <input type="hidden" name="regionId" id="regionId" class="sRegion" value="<?php echo $user['fk_i_region_id']; ?>"/>
+                      <input type="hidden" name="cityId" id="cityId" class="sCity" value="<?php echo $user['fk_i_city_id']; ?>"/>
                       <div id="location-picker" class="loc-picker picker-v2 ctr-<?php echo (del_count_countries() == 1 ? 'one' : 'more'); ?>">
                         <label for="term2"><span><?php _e('Where is your pickup/meetup location?', 'delta'); ?></span><span class="req">*</span></label>
 
                         <div class="mini-box">
-                          <input type="text" id="term2" class="term2" placeholder="<?php _e('City/Region', 'delta'); ?>" value="<?php echo del_get_term('', $prepare['i_country'], $prepare['i_region'], $prepare['i_city']); ?>" autocomplete="off" readonly/>
+                          <input type="text" id="term2" class="term2" placeholder="<?php _e('State and City', 'delta'); ?>" value="<?php echo del_get_term('', $prepare['i_country'], $prepare['i_region'], $prepare['i_city']); ?>" autocomplete="off" readonly/>
                           <i class="fa fa-angle-down"></i>
                         </div>
                         
@@ -132,7 +132,7 @@
                   <div class="row">
                     <label for="pickup_pref">Pickup Preferences<br><span style="font-weight: normal;">(shown on your listings to make transactions faster/smoother)</span></label>
                     <div class="input-box">
-                      <textarea name="pickup_pref" id="pickup_pref" class="short-text-area" placeholder="Examples: I prefer porch pickup at my house from 5pm-8pm. OR I prefer meetup at QT Gas station at 123 Street Rd, 9am-5pm Mon,Wed,Fri."><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></textarea>
+                      <textarea name="pickup_pref" id="pickup_pref" class="short-text-area" placeholder="Examples: I prefer porch pickup at my house from 5pm-8pm."><?php echo osc_esc_html(osc_user_field('pickup_pref')); ?></textarea>
                     </div>
                   </div>
 
@@ -140,7 +140,7 @@
                   <div class="row">
                     <label for="payment_pref">Payment Preferences</label>
                     <div class="input-box">
-                      <textarea name="payment_pref" id="payment_pref" class="short-text-area" placeholder="Examples: Venmo, CashApp, PayPal, Zelle, ApplePay, PayPal, Cash"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
+                      <textarea name="payment_pref" id="payment_pref" class="short-text-area" placeholder="Examples: Venmo, CashApp, PayPal, Zelle, ApplePay, Cash"><?php echo osc_esc_html(osc_user_field('payment_pref')); ?></textarea>
                     </div>
                   </div>
 

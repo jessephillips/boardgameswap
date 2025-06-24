@@ -8,8 +8,6 @@
 
 <body id="body-search" class="<?php if(del_device() <> '') { echo 'dvc-' . del_device(); } ?>">
 <?php osc_current_web_theme_path('header.php') ; ?>
-<?php osc_current_web_theme_path('inc.search.php') ; ?>
-<?php osc_current_web_theme_path('inc.category.php') ; ?>
 
 <?php 
   $params_spec = del_search_params();

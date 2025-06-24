@@ -62,7 +62,7 @@
     </div>
     
     <div class="relative2">
-      <div class="left">
+      <div class="left logo-box">
         <div class="logo">
           <a href="<?php echo osc_base_url(); ?>"><?php echo del_logo(); ?></a>
         </div>

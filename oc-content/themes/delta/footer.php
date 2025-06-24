@@ -6,20 +6,6 @@
   <div class="inside">
     <?php osc_run_hook('footer_top'); ?>
     
-    <div class="pub-box-line">
-      <div class="pub-box">
-        <div class="wrap">
-          <div class="info">
-            <h3><?php _e('The Leading Online Classifieds Platform', 'delta'); ?></h3>
-            <div class="desc"><?php _e('Our mission is to empower individuals across the country by facilitating seamless connections between buyers and sellers. We are committed to providing a trusted marketplace that enables you to achieve your goals through secure and efficient transactions.', 'delta'); ?></div>
-          </div>
-
-          <div class="button">
-            <a href="<?php echo osc_item_post_url(); ?>"><?php _e('Add a new listing', 'delta'); ?></a>
-          </div>
-        </div>
-      </div>
-    </div>
     
     
     <?php if(del_param('site_phone') != '' || del_param('site_email') != '') { ?>

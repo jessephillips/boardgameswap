@@ -101,7 +101,7 @@
 
         <div class="in">
           <div class="title-desc-box">
-            <label for="title[<?php echo osc_current_user_locale(); ?>]"><?php _e('Title', 'delta'); ?> *</label>
+            <label for="title[<?php echo osc_current_user_locale(); ?>]"><?php _e('Game Title', 'delta'); ?> *</label>
             <div class="td-wrap t1 row">
               <?php ItemForm::title_input('title', osc_current_user_locale(), osc_esc_html(del_post_item_title())); ?>
             </div>
@@ -195,7 +195,7 @@
           <?php } ?>
           
           <?php osc_run_hook('item_publish_category'); ?>
-          For Rent or Lend the price is a monthly rental price. If you want to trade, update the game wishlist on your profile to show the games you're interested in on this listing.
+          If you want to trade, update the game wishlist on your profile to show the games you're interested in on this listing.
         </div>
       </fieldset>
 
@@ -398,7 +398,7 @@
 
   <script type="text/javascript">
   $(document).ready(function(){
-    $('.add_item input[name^="title"]').attr('placeholder', '<?php echo osc_esc_js(__('Summarize your offer', 'delta')); ?>');
+    $('.add_item input[name^="title"]').attr('placeholder', '<?php echo osc_esc_js(__('i.e. Settlers of Catan (2008)', 'delta')); ?>');
     $('.add_item textarea[name^="description"]').attr('placeholder', '<?php echo osc_esc_js(__('Detail description of your offer', 'delta')); ?>');
     $('.add_item input[name="contactPhone"]').prop('type', 'tel');
 

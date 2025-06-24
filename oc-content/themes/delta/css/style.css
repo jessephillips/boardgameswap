@@ -10,7 +10,12 @@
 /* Home Page */
 #home-search .col.c1{width:calc(100% - 68px);}
 
+/* Logo in Header */
+header .left.logo-box {width:40%;}
+header .left.logo-box .logo {width: 100%;}
+
 /* Item.php / Listing */
+#listing .seller-prefs {margin-bottom: 20px; display: block; float: left;}
 #listing .seller-prefs .item {width: 100%; margin: 0 0 10px 0;}
 #listing .seller-prefs q {font-style: italic; font-weight: 100;}
 

@@ -378,6 +378,7 @@
           <?php osc_run_hook('item_meta'); ?>
 
           <!-- DESCRIPTION -->
+           <?php if(osc_item_description() != '') { ?>
           <div class="description">
             <h2><?php _e('Description', 'delta'); ?></h2>
 
@@ -385,6 +386,7 @@
               <?php echo osc_item_description(); ?>
             </div>
           </div>
+          <?php } ?>
           
           <?php osc_run_hook('item_description'); ?>
 
@@ -495,11 +497,6 @@
                   <label for="yourEmail"><span><?php _e('E-mail', 'delta') ; ?></span><span class="req">*</span></label> 
                   <div class="input-box"><?php ContactForm::your_email(); ?></div>
                 </div>       
-           
-                <div class="row">
-                  <label for="phoneNumber"><span><?php _e('Phone', 'delta') ; ?></span></label> 
-                  <div class="input-box"><?php ContactForm::your_phone_number(); ?></div>
-                </div>
               </div>
         
               <div class="rb">
@@ -951,7 +948,7 @@
       $('input[name="yourName"]').attr('placeholder', '<?php echo osc_esc_js(__('First name, Last name', 'delta')); ?>');
       $('input[name="yourEmail"]').attr('placeholder', '<?php echo osc_esc_js(__('your.email@dot.com', 'delta')); ?>');
       $('input[name="phoneNumber"]').attr('placeholder', '<?php echo osc_esc_js(__('+XXX XXX XXX', 'delta')); ?>');
-      $('#contact textarea[name="message"]').val('<?php echo osc_esc_js(sprintf(__('Dear %s,<br/><br/>I am interested in your offer %s, <br/>Please contact me back.<br/><br/>With best regards,<br/>%s', 'delta'), $contact_name, osc_highlight(osc_item_title(), 50), osc_logged_user_name())); ?>');
+      $('#contact textarea[name="message"]').val('<?php echo osc_esc_js(sprintf(__('Dear %s,<br/><br/>I am interested in your offer: %s, <br/>When & where can I meet you for pickup?<br/><br/>live long and prosper,<br/>%s', 'delta'), $contact_name, osc_highlight(osc_item_title(), 50), osc_logged_user_name())); ?>');
 
       // SHOW PHONE NUMBER
       $('body').on('click', '.mobile', function(e) {
