@@ -1,0 +1,1088 @@
+[12-May-2025 23:55:53 Europe/Madrid] PHP Fatal error:  Uncaught Error: Call to a member function getOriginalName() on bool in /home1/frndwrkc/public_html/boardgameswap/oc-includes/AjaxUploader.php:41
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/ajax.php(384): AjaxUploader->getOriginalName()
+#1 /home1/frndwrkc/public_html/boardgameswap/index.php(293): CWebAjax->doModel()
+#2 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-includes/AjaxUploader.php on line 41
+[22-May-2025 19:02:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function getOriginalName() on bool in /home1/frndwrkc/public_html/boardgameswap/oc-includes/AjaxUploader.php:41
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/ajax.php(384): AjaxUploader->getOriginalName()
+#1 /home1/frndwrkc/public_html/boardgameswap/index.php(293): CWebAjax->doModel()
+#2 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-includes/AjaxUploader.php on line 41
+[22-Jun-2025 20:53:28 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/UserActions.php on line 401
+[22-Jun-2025 21:02:54 America/New_York] payment_pref has a value
+[22-Jun-2025 21:09:15 America/New_York] payment_pref has a value
+[22-Jun-2025 21:09:15 America/New_York] value of $paymentPref: venmo
+[22-Jun-2025 21:11:20 America/New_York] payment_pref has a value
+[22-Jun-2025 21:11:20 America/New_York] value of $paymentPref: venmo
+[22-Jun-2025 21:11:20 America/New_York] ran the s_payment_rpref thing
+[22-Jun-2025 21:15:54 America/New_York] payment_pref has a value
+[22-Jun-2025 21:15:54 America/New_York] value of $paymentPref: venmo
+[22-Jun-2025 21:15:54 America/New_York] past the s_payment_rpref thing
+[22-Jun-2025 21:18:36 America/New_York] payment_pref has a value
+[22-Jun-2025 21:18:36 America/New_York] value of $paymentPref: testing
+[22-Jun-2025 21:18:36 America/New_York] past the s_payment_rpref thing
+[22-Jun-2025 21:37:32 America/New_York] payment_pref has a value
+[22-Jun-2025 21:37:32 America/New_York] value of $paymentPref: venmo paypal
+[22-Jun-2025 21:37:32 America/New_York] past the s_payment_rpref thing
+[22-Jun-2025 21:42:37 America/New_York] payment_pref has a value
+[22-Jun-2025 21:42:37 America/New_York] value of $paymentPref: Venmo and Paypal
+[23-Jun-2025 11:34:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function osc_country_select() in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php:115
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/helpers/hDefines.php(460): require()
+#1 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(141): osc_current_web_theme_path('user-register.p...')
+#2 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(48): CWebRegister->doView('user-register.p...')
+#3 /home1/frndwrkc/public_html/boardgameswap/index.php(287): CWebRegister->doModel()
+#4 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php on line 115
+[23-Jun-2025 11:36:29 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function osc_country_select() in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php:115
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/helpers/hDefines.php(460): require()
+#1 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(141): osc_current_web_theme_path('user-register.p...')
+#2 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(48): CWebRegister->doView('user-register.p...')
+#3 /home1/frndwrkc/public_html/boardgameswap/index.php(287): CWebRegister->doModel()
+#4 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php on line 115
+[23-Jun-2025 11:36:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function osc_country_select() in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php:115
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/helpers/hDefines.php(460): require()
+#1 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(141): osc_current_web_theme_path('user-register.p...')
+#2 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(48): CWebRegister->doView('user-register.p...')
+#3 /home1/frndwrkc/public_html/boardgameswap/index.php(287): CWebRegister->doModel()
+#4 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php on line 115
+[23-Jun-2025 11:37:30 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function osc_country_select() in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php:93
+Stack trace:
+#0 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/helpers/hDefines.php(460): require()
+#1 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(141): osc_current_web_theme_path('user-register.p...')
+#2 /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/controller/register.php(48): CWebRegister->doView('user-register.p...')
+#3 /home1/frndwrkc/public_html/boardgameswap/index.php(287): CWebRegister->doModel()
+#4 {main}
+  thrown in /home1/frndwrkc/public_html/boardgameswap/oc-content/themes/delta/user-register.php on line 93
+[27-Jun-2025 12:01:41 America/Boise] PHP Parse error:  syntax error, unexpected '$words' (T_VARIABLE) in /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/emails.php on line 736
+[27-Jun-2025 12:01:45 America/Boise] PHP Parse error:  syntax error, unexpected '$words' (T_VARIABLE) in /home1/frndwrkc/public_html/boardgameswap/oc-includes/osclass/emails.php on line 736
+[27-Jun-2025 14:02:44 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 32
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7633959000
+    [d_coord_long] => -84.4103971000
+    [pk_i_id] => 32
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-24 09:39:20
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 20000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => HbzW46Ap
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 12
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 32
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Settlers of Catan (2008)
+                    [s_description] => 
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Sell/Trade in United States Georgia Atlanta
+    [s_description] => There's no description available in your language
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 1
+        )
+
+)
+
+[27-Jun-2025 14:02:44 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 14:21:03 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Test Game Title
+)
+
+[27-Jun-2025 14:21:03 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Test Game Title
+)
+
+[27-Jun-2025 14:26:26 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 34
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7662849000
+    [d_coord_long] => -84.4115441000
+    [pk_i_id] => 34
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 14:21:03
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 30000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => B6rlpPAI
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 0
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 34
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Test Game Title
+                    [s_description] => 
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Sell/Trade in United States Georgia Atlanta
+    [s_description] => There's no description available in your language
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 2
+        )
+
+)
+
+[27-Jun-2025 14:26:26 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 14:29:02 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Test 2
+)
+
+[27-Jun-2025 14:29:02 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Test 2
+)
+
+[27-Jun-2025 14:29:02 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Test 2
+)
+
+[27-Jun-2025 14:29:02 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Test 2
+)
+
+[27-Jun-2025 14:29:02 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Test 2
+)
+
+[27-Jun-2025 14:29:27 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 35
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7654049000
+    [d_coord_long] => -84.4089041000
+    [pk_i_id] => 35
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 97
+    [dt_pub_date] => 2025-06-27 14:29:02
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 20000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => M5ahO8A6
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 0
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 35
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Test 2
+                    [s_description] => 
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Rent/Lend in United States Georgia Atlanta
+    [s_description] => There's no description available in your language
+    [category] => Array
+        (
+            [pk_i_id] => 97
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 1
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 97
+            [fk_c_locale_code] => en_US
+            [s_name] => Rent/Lend
+            [s_description] => 
+            [s_slug] => rentlend
+            [i_num_items] => 1
+        )
+
+)
+
+[27-Jun-2025 14:29:27 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 17:15:14 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:15:14 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:15:14 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:15:14 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:15:14 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:16:20 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:16:20 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:16:20 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:16:20 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:16:20 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:17:45 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:17:45 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:17:45 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:17:45 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:17:45 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Space Base
+)
+
+[27-Jun-2025 17:18:56 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 36
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7650399000
+    [d_coord_long] => -84.4105691000
+    [pk_i_id] => 36
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 17:17:45
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 40000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => zcYJSWCn
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 0
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 36
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Space Base
+                    [s_description] => Will ship to your for free
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Space Base
+    [s_description] => Will ship to your for free
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 4
+        )
+
+)
+
+[27-Jun-2025 17:18:56 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 18:50:07 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 supeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest 
+)
+
+[27-Jun-2025 18:50:07 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 supeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest 
+)
+
+[27-Jun-2025 18:50:07 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Ticket to ride 2004 supeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
+)
+
+[27-Jun-2025 18:50:07 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Ticket to ride 2004 supeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest
+)
+
+[27-Jun-2025 18:50:22 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 
+)
+
+[27-Jun-2025 18:50:22 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 
+)
+
+[27-Jun-2025 18:50:22 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Ticket to ride 2004
+)
+
+[27-Jun-2025 18:50:22 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Ticket to ride 2004
+)
+
+[27-Jun-2025 18:50:45 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 
+)
+
+[27-Jun-2025 18:50:45 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Ticket to ride 2004 
+)
+
+[27-Jun-2025 18:50:45 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Ticket to ride 2004
+)
+
+[27-Jun-2025 18:50:45 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Ticket to ride 2004
+)
+
+[27-Jun-2025 18:50:45 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Ticket to ride 2004
+)
+
+[27-Jun-2025 18:54:07 America/New_York] TITLE BEFORE FILTER: Array
+(
+    [en_US] => Ticket to Ride: Europe (2005)
+)
+
+[27-Jun-2025 18:54:07 America/New_York] TITLE AFTER FILTER: Array
+(
+    [en_US] => Ticket to Ride: Europe (2005)
+)
+
+[27-Jun-2025 18:54:07 America/New_York] TITLE AFTER Validate: Array
+(
+    [en_US] => Ticket to Ride: Europe (2005)
+)
+
+[27-Jun-2025 18:54:07 America/New_York] TITLE AFTER pre_item_add: Array
+(
+    [en_US] => Ticket to Ride: Europe (2005)
+)
+
+[27-Jun-2025 18:54:07 America/New_York] TITLE Before insertItemLocales: Array
+(
+    [en_US] => Ticket to Ride: Europe (2005)
+)
+
+[27-Jun-2025 19:59:29 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 38
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 375 JAMES P BRAWLEY DR NW APT B4
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7550867000
+    [d_coord_long] => -84.3886891000
+    [pk_i_id] => 38
+    [fk_i_user_id] => 23
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 18:54:07
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 20000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Just Test I
+    [s_contact_email] => ipavlukhindasher@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.125.222
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => 9Nl8nVTb
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 1
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 38
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Ticket to Ride: Europe (2005)
+                    [s_description] => test
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Ticket to Ride: Europe (2005)
+    [s_description] => test
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 6
+        )
+
+)
+
+[27-Jun-2025 19:59:29 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 20:00:59 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 37
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 375 JAMES P BRAWLEY DR NW APT B4
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => Atlanta
+    [d_coord_lat] => 33.7540437000
+    [d_coord_long] => -84.3879751000
+    [pk_i_id] => 37
+    [fk_i_user_id] => 23
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 18:50:45
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 10000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Just Test I
+    [s_contact_email] => ipavlukhindasher@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.125.222
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => Kmm6vdsk
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 2
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 37
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Ticket to ride 2004
+                    [s_description] => Super test krajesndviocxklnm iog;kvcljmopa;lkgsdojs  soixndfb vo;klsjgrmovx;clkj  ikjrnsge siodf;cvxklj moskl;dfgjmvpoefp dskl  opkergjmv[ 'o;lkwag,v] c[
+;' kesdfp'; poer;lgvkjm poklergjnb ioa'tk;lrf,pv[sd;x 'psfogl'jvm po ;lgjvmosp';zgkf, q]'s;/ plokrjgmvio kljgnmvod xkcljm podfsx;lcgkvm]sa[
+gfk, ]wdkjbmpofsd;lgkjm]ospofd'atgk\ e[s
+dfhkg s ]pso;gkjmspofd'g;ljkms d][g
+';kve]spd'x;lfkgmpof;lgkhs
+pkl ]s'pfkg[psd;flgkmpofkhjnmsz
+[dr'laf s'pdf;olgkpof;ltgkmspo'dfg;lk, a,[s
+ spo;lfgkjmvs][pdft;glksd[f
+pc;lvks,d p; s;lk[po;l  pprepdogfk  po []
+
+
+
+
+
+
+
+prtgkvpolkegfpodxlkm]potpgdbvxkperlgjx iogfd 
+ 
+
+ 
+kprgflkv
+Rgv
+ l
+srg 
+[gspbk,
+pgrke
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Ticket to ride 2004
+    [s_description] => Super test krajesndviocxklnm iog;kvcljmopa;lkgsdojs  soixndfb vo;klsjgrmovx;clkj  ikjrnsge siodf;cvxklj moskl;dfgjmvpoefp dskl  opkergjmv[ 'o;lkwag,v] c[
+;' kesdfp'; poer;lgvkjm poklergjnb ioa'tk;lrf,pv[sd;x 'psfogl'jvm po ;lgjvmosp';zgkf, q]'s;/ plokrjgmvio kljgnmvod xkcljm podfsx;lcgkvm]sa[
+gfk, ]wdkjbmpofsd;lgkjm]ospofd'atgk\ e[s
+dfhkg s ]pso;gkjmspofd'g;ljkms d][g
+';kve]spd'x;lfkgmpof;lgkhs
+pkl ]s'pfkg[psd;flgkmpofkhjnmsz
+[dr'laf s'pdf;olgkpof;ltgkmspo'dfg;lk, a,[s
+ spo;lfgkjmvs][pdft;glksd[f
+pc;lvks,d p; s;lk[po;l  pprepdogfk  po []
+
+
+
+
+
+
+
+prtgkvpolkegfpodxlkm]potpgdbvxkperlgjx iogfd 
+ 
+
+ 
+kprgflkv
+Rgv
+ l
+srg 
+[gspbk,
+pgrke
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 6
+        )
+
+)
+
+[27-Jun-2025 20:00:59 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 20:10:57 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 37
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 375 JAMES P BRAWLEY DR NW APT B4
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => Atlanta
+    [d_coord_lat] => 33.7540437000
+    [d_coord_long] => -84.3879751000
+    [pk_i_id] => 37
+    [fk_i_user_id] => 23
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 18:50:45
+    [dt_mod_date] => 2025-06-27 20:04:33
+    [f_price] => 
+    [i_price] => 44000000
+    [fk_c_currency_code] => USD
+    [s_contact_name] => Just Test I
+    [s_contact_email] => ipavlukhindasher@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.125.222
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => Kmm6vdsk
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 2
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 37
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Ticket to ride 2004
+                    [s_description] => will ship for free.
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Ticket to ride 2004
+    [s_description] => will ship for free.
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 6
+        )
+
+)
+
+[27-Jun-2025 20:10:57 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 20:16:09 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 32
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7633959000
+    [d_coord_long] => -84.4103971000
+    [pk_i_id] => 32
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-24 09:39:20
+    [dt_mod_date] => 
+    [f_price] => 
+    [i_price] => 20000000
+    [fk_c_currency_code] => 
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => HbzW46Ap
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 12
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 32
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Settlers of Catan (2008)
+                    [s_description] => 
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Sell/Trade in United States Georgia Atlanta
+    [s_description] => There's no description available in your language
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 6
+        )
+
+)
+
+[27-Jun-2025 20:16:09 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Seller message about {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{USER_NAME} ({USER_EMAIL}, {USER_PHONE}) left you a message about your listing <a href="{ITEM_URL}">{ITEM_TITLE}</a>: You can reply to them directly by replying to this email. They said:</p>
+<p>{COMMENT}</p>
+<p>{ITEM_LINK}</p>
+)
+
+[27-Jun-2025 20:21:50 America/New_York] $item array: Array
+(
+    [fk_i_item_id] => 36
+    [fk_c_country_code] => US
+    [s_country] => United States
+    [s_country_native] => United States
+    [s_address] => 385 Sunset Ave NW
+    [s_zip] => 30314
+    [fk_i_region_id] => 7197000
+    [s_region] => Georgia
+    [s_region_native] => 
+    [fk_i_city_id] => 7180439
+    [s_city] => Atlanta
+    [s_city_native] => 
+    [fk_i_city_area_id] => 
+    [s_city_area] => 
+    [d_coord_lat] => 33.7650399000
+    [d_coord_long] => -84.4105691000
+    [pk_i_id] => 36
+    [fk_i_user_id] => 1
+    [fk_i_category_id] => 96
+    [dt_pub_date] => 2025-06-27 17:17:45
+    [dt_mod_date] => 2025-06-27 20:10:10
+    [f_price] => 
+    [i_price] => 40000000
+    [fk_c_currency_code] => USD
+    [s_contact_name] => Jesse P.
+    [s_contact_email] => mr.jesse.phillips@gmail.com
+    [s_contact_phone] => 
+    [s_contact_other] => 
+    [s_ip] => 24.98.124.56
+    [b_premium] => 0
+    [b_enabled] => 1
+    [b_active] => 1
+    [b_spam] => 0
+    [s_secret] => zcYJSWCn
+    [b_show_email] => 0
+    [b_show_phone] => 0
+    [i_renewed] => 0
+    [dt_expiration] => 9999-12-31 23:59:59
+    [i_num_views] => 5
+    [locale] => Array
+        (
+            [en_US] => Array
+                (
+                    [fk_i_item_id] => 36
+                    [fk_c_locale_code] => en_US
+                    [s_title] => Space Base
+                    [s_description] => Will ship to you for free!
+                )
+
+        )
+
+    [fk_c_locale_code] => en_US
+    [s_title] => Space Base
+    [s_description] => Will ship to you for free!
+    [category] => Array
+        (
+            [pk_i_id] => 96
+            [fk_i_parent_id] => 98
+            [i_expiration_days] => 0
+            [i_position] => 0
+            [b_enabled] => 1
+            [b_price_enabled] => 1
+            [s_icon] => 
+            [s_color] => 
+            [fk_i_category_id] => 96
+            [fk_c_locale_code] => en_US
+            [s_name] => Sell/Trade
+            [s_description] => 
+            [s_slug] => selltrade
+            [i_num_items] => 6
+        )
+
+)
+
+[27-Jun-2025 20:21:50 America/New_York] $content array: Array
+(
+    [fk_i_pages_id] => 1
+    [fk_c_locale_code] => en_US
+    [s_title] => Buyer interested: {ITEM_TITLE}. BoardGameSwap.org
+    [s_text] => <p>{COMMENT}<br /><br />You can reply to them directly by replying to this email.</p>
+<p>{USER_NAME} {USER_PHONE} is interested in <a href="{ITEM_URL}">{ITEM_TITLE}</a>. </p>
+<p>{ITEM_LINK}</p>
+)
+
